@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jersey+10&display=swap');
+@import 'tailwindcss';
+@theme {
+  --font-jersey: 'Jersey 10', sans-serif;
+  --font-ibm-plex-mono: 'IBM Plex Mono', monospace;
+
+  /* Custom Colors */
+  --color-brand: #231212;
+  --color-brand-hover: #422727;
+  --color-light-bg: #ffffff;
+  --color-dark-bg: #000000;
+  --color-gray-100: #f3f3f3;
+  --color-gray-200: #e5e5e5;
+  --color-gray-300: #cccccc;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f3f3;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #231212;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #422727;
+}
+
+/* Selection colors */
+::selection {
+  background-color: #231212;
+  color: white;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid #231212;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all interactive elements */
+a,
+button {
+  transition: all 200ms ease-in-out;
+}
+
+/* Loading animation for skill bars */
+@keyframes fillSkill {
+  from {
+    width: 0;
+  }
+}
+
+/* Animate skill bars on page load */
+.skill-bar {
+  animation: fillSkill 1s ease-out forwards;
+}
