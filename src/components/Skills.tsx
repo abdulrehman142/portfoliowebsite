@@ -37,6 +37,8 @@ const Skills = () => {
         { name: 'Scikit-learn', level: 75 },
         { name: 'TensorFlow', level: 70 },
         { name: 'CNN/ANN', level: 70 },
+        { name: 'Computer Vision', level: 75 },
+        { name: 'Explainable AI (XAI)', level: 70 },
       ],
     },
     {
@@ -46,6 +48,8 @@ const Skills = () => {
         { name: 'MongoDB', level: 75 },
         { name: 'T-SQL', level: 75 },
         { name: 'AWS S3', level: 70 },
+        { name: 'MongoDB Atlas', level: 75 },
+        { name: 'Hugging Face Spaces', level: 70 },
       ],
     },
     {
@@ -56,6 +60,8 @@ const Skills = () => {
         { name: 'MLflow', level: 70 },
         { name: 'DVC', level: 70 },
         { name: 'Netlify', level: 85 },
+        { name: 'Render', level: 75 },
+        { name: 'Gemini API Integration', level: 75 },
       ],
     },
   ];

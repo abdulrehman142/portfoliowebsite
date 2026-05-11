@@ -7,6 +7,7 @@ interface Project {
   role: string;
   tech: string[];
   github?: string;
+  githubBackend?: string;
   live?: string;
   learned: string;
   featured: boolean;
@@ -15,6 +16,49 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: 'Medirator - Your AI Healthcare Assistant',
+    description:
+      'A multimodal healthcare platform combining AI diagnostics, patient management, explainable AI, and accessibility into one ecosystem.',
+    problem:
+      'Healthcare workflows are often fragmented across diagnosis, records, appointments, and communication. Medirator unifies these into a single platform for patients, doctors, and admins.',
+    role: 'Full Stack AI Developer - Built and integrated multimodal AI modules, patient and doctor workflows, and accessibility enhancements based on survey feedback.',
+    tech: [
+      'React',
+      'FastAPI',
+      'MongoDB Atlas',
+      'DenseNet-121',
+      'Random Forest',
+      'Gemini Pro API',
+      'Hugging Face Spaces',
+      'Netlify',
+      'Render',
+    ],
+    github: 'https://github.com/abdulrehman142/medirator_frontend.git',
+    githubBackend:
+      'https://github.com/abdulrehman142/medirator_backend.git',
+    live: 'https://medirator.netlify.app',
+    learned:
+      'Learned to balance AI capability with real-world healthcare constraints, and improved product accessibility with multilingual and visibility-focused UX decisions.',
+    featured: true,
+    video: '/videos/medirator.mp4',
+  },
+  {
+    title: 'Fixify - Service Marketplace',
+    description:
+      'A full-stack service marketplace connecting customers with service providers for home repairs, maintenance, and professional services.',
+    problem:
+      'Finding reliable service providers is challenging. Fixify provides a trusted platform with reviews, booking, and a smooth customer-provider workflow.',
+    role: 'Full Stack Developer - Developed the React frontend with TypeScript, designed the data models, and built RESTful APIs with FastAPI.',
+    tech: ['React 18', 'TypeScript', 'Tailwind CSS', 'FastAPI', 'MariaDB'],
+    github: 'https://github.com/abdulrehman142/fixify_frontend.git',
+    githubBackend: 'https://github.com/abdulrehman142/fixify_backend.git',
+    live: 'https://fixify-a-servicemarketplace.netlify.app',
+    learned:
+      'Improved my skills in building scalable marketplaces, handling complex user flows, and implementing secure authentication systems.',
+    featured: true,
+    video: '/videos/fixify.mp4',
+  },
   {
     title: 'Curator – Personal Wardrobe Assistant',
     description:
@@ -41,20 +85,6 @@ const projects: Project[] = [
       'Deepened my understanding of MLOps pipelines, model versioning with DVC, and integrating complex ML models into production-ready applications.',
     featured: true,
     video: '/videos/curator.mp4',
-  },
-  {
-    title: 'Fixify – Service Marketplace',
-    description:
-      'A full-stack service marketplace connecting customers with service providers for home repairs, maintenance, and various professional services.',
-    problem:
-      'Finding reliable service providers is challenging. Fixify provides a trusted platform with reviews, booking, and secure payments.',
-    role: 'Full Stack Developer - Developed the React frontend with TypeScript, designed the database schema, and built RESTful APIs with FastAPI.',
-    tech: ['React 18', 'TypeScript', 'Tailwind CSS', 'FastAPI', 'MariaDB'],
-    github: 'https://github.com/abdulrehman142/fixify_frontend.git',
-    learned:
-      'Improved my skills in building scalable marketplaces, handling complex user flows, and implementing secure authentication systems.',
-    featured: true,
-    video: '/videos/fixify.mp4',
   },
   {
     title: 'Inventory Management System',
@@ -248,7 +278,18 @@ const Projects = () => {
                       className="flex items-center gap-2 px-4 py-2 bg-[#231212] hover:bg-[#422727] text-white hover:bg-[#231212] hover:text-white dark:hover:bg-gray-800 font-ibm-plex-mono text-sm rounded-md transition-all duration-200"
                     >
                       <Github size={16} />
-                      Code
+                      {project.githubBackend ? 'Frontend Code' : 'Code'}
+                    </a>
+                  )}
+                  {project.githubBackend && (
+                    <a
+                      href={project.githubBackend}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-[#231212] hover:bg-[#422727] text-white font-ibm-plex-mono text-sm rounded-md transition-all duration-200"
+                    >
+                      <Github size={16} />
+                      Backend Code
                     </a>
                   )}
                   {project.live && (
