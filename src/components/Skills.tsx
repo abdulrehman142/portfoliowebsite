@@ -66,6 +66,11 @@ const Skills = () => {
     },
   ];
 
+  const certifications = [
+    'AWS Cloud Foundations Course',
+    'Aspire Leadership Program 2026',
+  ];
+
   return (
     <section id="skills" className="py-6 md:py-12 bg-white dark:bg-black">
       <div className="max-w-6xl mx-auto px-3 md:px-4">
@@ -118,10 +123,17 @@ const Skills = () => {
             Certifications
           </h3>
 
-          <div className="inline-flex items-center gap-3 px-4 md:px-6 py-3 md:py-4 bg-[#231212] rounded-md shadow-lg">
-            <p className="font-ibm-plex-mono text-sm md:text-base text-white">
-              AWS Cloud Foundations Course
-            </p>
+          <div className="mx-auto grid max-w-4xl gap-3 sm:grid-cols-2">
+            {certifications.map((certification) => (
+              <div
+                key={certification}
+                className="flex h-full w-full items-center justify-center px-4 md:px-6 py-3 md:py-4 bg-[#231212] rounded-md shadow-lg"
+              >
+                <p className="font-ibm-plex-mono text-sm md:text-base text-white text-center">
+                  {certification}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
