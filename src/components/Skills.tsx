@@ -117,7 +117,7 @@ const Skills = () => {
           <h3 className="font-jersey text-2xl md:text-3xl text-[#231212] dark:text-white mb-4 md:mb-6 flex items-center justify-center gap-2">
             Certifications
           </h3>
-<div className="flex flex-col">
+<div className="gap-4">
           <div className="inline-flex items-center gap-3 px-4 md:px-6 py-3 md:py-4 bg-[#231212] rounded-md shadow-lg">
             <p className="font-ibm-plex-mono text-sm md:text-base text-white">
               AWS Cloud Foundations Course
