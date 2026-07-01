@@ -19,7 +19,7 @@ const About = () => {
             <div className="aspect-square max-w-xs sm:max-w-md mx-auto">
               <div className="w-full h-full rounded-md overflow-hidden border-2 border-[#231212] dark:border-white shadow-lg">
                 <img
-                  src="/images/pfp.jpeg"
+                  src="/images/pfp.png"
                   alt="Abdul Rehman"
                   className="w-full h-full object-cover"
                 />
