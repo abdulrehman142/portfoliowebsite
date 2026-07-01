@@ -123,6 +123,11 @@ const Skills = () => {
               AWS Cloud Foundations Course
             </p>
           </div>
+          <div className="inline-flex items-center gap-3 px-4 md:px-6 py-3 md:py-4 bg-[#231212] rounded-md shadow-lg">
+            <p className="font-ibm-plex-mono text-sm md:text-base text-white">
+              Aspire Leadership Program 2026
+            </p>
+          </div>
         </div>
       </div>
     </section>
