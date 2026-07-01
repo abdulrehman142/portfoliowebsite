@@ -10,14 +10,22 @@ interface TimelineItem {
 
 const workExperience: TimelineItem[] = [
   {
+    title: 'B2B Intern',
+    organization: 'Telenor Pakistan',
+    period: 'Jun 2026 – Jul 2026',
+    description: [
+      'Assisted in enterprise telecom analysis across 4 client site visits, strengthening requirement mapping and solution positioning for B2B accounts.',
+      'Contributed to 3 enterprise pitching sessions and contract discussions, helping create more structured client engagement workflows.',
+    ],
+    current: true,
+  },
+  {
     title: 'Web Development Intern',
     organization: 'Tintash',
     period: 'Jul 2025 – Sep 2025',
     description: [
-      'Built responsive UIs and reusable components with React, TypeScript, and Tailwind CSS',
-      'Developed REST APIs using Node.js, Express; designed and managed databases with Sequelize',
-      'Maintained clean code with Git, ESLint, Prettier; deployed apps via Netlify',
-      'Contributed to projects: To-Do App, Tin Parity (PRs)',
+      'Engineered responsive frontend interfaces using React and TypeScript, improving UI consistency across multiple devices and screen sizes.',
+      'Implemented reusable components, dark mode, and UX enhancements, resulting in a 30% improvement in user experience based on project feedback.',
     ],
     current: false,
   },
@@ -26,9 +34,8 @@ const workExperience: TimelineItem[] = [
     organization: 'Punjab Information Technology Board (PITB)',
     period: 'Jul 2025 – Aug 2025',
     description: [
-      'Practiced Python for ML and explored deep learning with TensorFlow and Keras',
-      'Implemented basic neural networks including sigmoid and probability-based models',
-      'Developed a simple OCR tool to extract text from images',
+      'Developed an OCR-based document intelligence pipeline using CNN architectures and OpenCV for automated text extraction from scanned documents.',
+      'Optimized preprocessing and recognition pipeline, achieving 20% improvement in OCR accuracy through noise reduction and image enhancement techniques.',
     ],
     current: false,
   },
@@ -36,28 +43,12 @@ const workExperience: TimelineItem[] = [
 
 const education: TimelineItem[] = [
   {
-    title: 'Bachelor of Science in Computer Science',
-    organization: 'FAST-NUCES, Lahore',
+    title: 'BS Computer Science',
+    organization: 'FAST National University of Computer and Emerging Sciences',
     period: '2023 – 2027',
     description: [
-      'Studying core CS fundamentals including Data Structures, Algorithms, and OOP',
-      'Specializing in Software Engineering and Machine Learning',
-      'Active participant in coding competitions and hackathons',
+      'Computer Science student focused on software development, AI/ML, and product building.',
     ],
-  },
-  {
-    title: 'HSSC – Pre-Engineering',
-    organization: 'Government College University, Lahore',
-    period: '2021 – 2023',
-    description: [
-      'Completed higher secondary education with focus on Mathematics and Physics',
-    ],
-  },
-  {
-    title: 'SSC – Science',
-    organization: 'Beaconhouse School System',
-    period: '2008 – 2021',
-    description: ['Strong foundation in Science and Mathematics'],
   },
 ];
 

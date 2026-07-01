@@ -38,32 +38,31 @@ const About = () => {
 
             <div className="space-y-4 font-ibm-plex-mono text-sm md:text-base text-[#231212]/80 dark:text-white/80">
               <p>
-                I'm a Computer Science student at{' '}
+                I'm an AI/ML engineer and software developer at{' '}
                 <span className="text-[#422727] dark:text-[#CCCCCC] font-semibold">
-                  FAST-NUCES, Lahore
+                  FAST National University of Computer and Emerging Sciences
                 </span>{' '}
-                with a passion for building things that live on the internet. I
-                enjoy turning complex problems into simple, elegant solutions.
+                with a focus on building practical systems that combine strong
+                software engineering with applied machine learning.
               </p>
 
               <p>
-                My journey in tech started with curiosity about how things work,
-                and it has evolved into a deep love for{' '}
+                My work spans{' '}
                 <span className="text-[#422727] dark:text-[#CCCCCC] font-semibold">
                   full-stack development
                 </span>{' '}
                 and{' '}
                 <span className="text-[#422727] dark:text-[#CCCCCC] font-semibold">
-                  machine learning
+                  AI/ML engineering
                 </span>
-                . I believe in writing clean, maintainable code and creating
-                experiences that are both functional and delightful.
+                , from responsive frontend interfaces to OCR pipelines and AI
+                healthcare products.
               </p>
 
               <p>
-                When I'm not coding, you'll find me exploring new frameworks,
-                contributing to side projects, or diving deep into AI research
-                papers. I'm always eager to learn and take on new challenges.
+                I enjoy shipping useful products, improving user experience, and
+                working on projects that turn messy real-world problems into
+                reliable systems.
               </p>
             </div>
 

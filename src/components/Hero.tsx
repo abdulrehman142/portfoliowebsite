@@ -53,13 +53,13 @@ const Hero = () => {
         </h1>
 
         <p className="font-ibm-plex-mono text-base sm:text-lg md:text-xl lg:text-2xl text-[#422727] dark:text-[#CCCCCC] mb-6">
-          Full Stack Developer & ML Enthusiast
+          AI/ML Engineer - Software Developer
         </p>
 
         <p className="font-ibm-plex-mono text-[#231212]/80 dark:text-white/80 text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
-          I build robust web applications and explore AI/ML solutions.
-          Passionate about turning complex problems into elegant, user-friendly
-          experiences.
+          I build production-ready web applications and AI systems, combining
+          software engineering with machine learning to solve real-world
+          problems.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
